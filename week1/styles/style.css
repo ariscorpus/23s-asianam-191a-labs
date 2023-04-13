@@ -23,3 +23,6 @@ header{
 #contents{
     grid-area: content;
 }
+.fitpicture{
+    max-width: 200px;
+}
