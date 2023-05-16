@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Good Eats!</title>
+        <!-- hint: remember to change your page title! -->
+        <meta charset="utf-8" />
+        <link rel="shortcut icon" href="#">
+        <link rel="stylesheet" href="styles/style.css">
+
+        <!-- Leaflet's css-->
+        <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css" />
+
+        <!-- Leaflet's JavaScript-->
+        <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"></script>
+
+        <!-- Papa Parse -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/PapaParse/5.3.0/papaparse.min.js"></script>
+    </head>
+    
+    <body> 
+        <header style="font-size: 50px"><b>
+            Aris' Eats!
+        </b></header>
+
+        <div class="main">
+           <h1>Food is love, Food is life.</h1> 
+            <p style="font-size: 25px">I've been a foodie for pretty much my whole life and I love exploring new and exciting cuisines. 
+                These are just some of my favorite foods and I hope you also put me on and share your favorite as well!
+            </p>
+            <div id="contents">
+                <div id="placeForButtons"></div>
+                <button id="buttonGiovannisShrimpTrunk" lat="21.6839" lng="-157.9396">Giovanni's Shrimp Truck</button>
+                <button id="buttonGreatWallBerkeley" lat="37.8678" lng="-122.2657">Great Wall Berkeley</button>
+                <button id="buttonBrothersCousin" lat="20.9890" lng="-86.8290">Brother's Cousins</button>
+                <!-- Be sure to use your own survey here!!!!!!! -->
+                <div id="Goodeats">
+                    <iframe src="https://forms.gle/Mm4YVTJfR9cQzvEZ6" width="100%" height="100%" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
+                </div>
+
+            </div>
+            <div id="the_map"></div>
+        </div>
+        <div id="footer">
+            Ya feel me!
+            
+        </div>
+        <script src="js/init.js"></script>
+    </body>
+</html>
