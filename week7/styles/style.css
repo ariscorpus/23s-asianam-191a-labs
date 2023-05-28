@@ -1,0 +1,73 @@
+body{
+    display: grid;
+    grid-template-rows: 50px auto auto;
+    grid-template-areas: "header" "main_content" "footer";
+    background-color: rgb(255, 253, 194);
+    gap: 10px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+header{
+    grid-area: header;
+    justify-self: center;
+    align-self: center;
+    margin: 0;
+    padding: 20px 0;
+    color: #ff6f00;
+    text-shadow: 2px 2px 1px black;
+}
+
+#footer{
+    grid-area: footer;
+    gap: 10px
+}
+
+.main{
+    grid-area: main_content;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas: "main_map content";
+    display: grid;
+    gap: 20px
+}
+
+#contents{
+    grid-area: content;
+    display: grid;
+    grid-template-rows: 3fr 1fr; 
+    grid-template-areas: "buttonHome" "survey"
+}
+
+#the_map{
+    height:80vh;
+    grid-area: main_map;
+    margin-top: 20px;
+    gap: 10px
+}
+
+#theSurvey{
+    grid-area: survey;
+    margin-top: 20px;
+    justify-self: center; /* added this to center the button in the div */
+}
+
+/* css for the button */
+#surveyButton{
+    padding: 15px 32px;
+    margin: 10px;
+    background-color: #00bc09;
+    cursor: pointer;
+}
+
+/* css for button to get rid of the underline */
+#surveyButton a{
+    text-decoration: none; 
+    gap:10px
+}
+
+#placeForButtons{
+    grid-area: buttonHome;
+    display:grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+    background-color: #ff6f00;
+}
